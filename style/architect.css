@@ -17,16 +17,17 @@
 .text-light-dark{
     color:#727272
 }
+.section-title{
+    color: var(#131313);
+    font-size: 2.8rem;
+    font-weight: 700;
+}    
 /*heder style */
 header{
     background-color: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
-.nav-title{
-    color: var(#131313);
-    font-size: 2.8rem;
-    font-weight: 700;
-}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -62,7 +63,7 @@ nav li a{
 }
 
 .banner img{
-    margin-top: 25px;
+    margin-top: 20px;
     width: 100%
 }
     
@@ -105,10 +106,49 @@ main{
     color: #FF900E;
     font-weight: 700;
 }
+/* fact section */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
 
+}
+.facts-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding:  40px 30px;
 
+}
+.facts-card-container .card-title{
+    font-weight: 600;
+    font-size: 1.24rem;
+    margin-top: 5px;
 
+}
+.facts-card-container .caed-stats{
+    font-size: 2.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
+}
+
+/* sponcher */
+.Sponspore{
+    text-align: center;
+}
+.sponsors-img-container{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 50px;
+    gap: 40px;
+    align-items: center;
+   
+}
+.sponsors-img-container img{
+    width: 165px;
+    height: 50px;
+    
+}
 
 
 /* responsive media queries */
@@ -116,20 +156,28 @@ main{
     header{
         padding: 20px;
     }
-    nav, .teams-contaner{
+    nav, .teams-contaner,.facts-card-container,.sponsors-img-container{
         flex-direction: column;
     }
     .teams-img{
         grid-template-columns: 1fr;
     }
+    .teams-content,.facts-card-container{
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+   .facts-card-container{
+    gap:20px
+   }
 }
-
 /* tablet or medium devices */
-@media  screen and (min-width:576px) and (max-width: 960px) {
+@media screen and (min-width:576px) and (max-width: 976px){
     header{
         padding: 50px;
     }
-    nav {
+    nav,
+    .teams-contaner,.sponsors-img-container {
         flex-direction: column;
-   }
+    }
 }
+
