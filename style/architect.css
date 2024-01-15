@@ -208,7 +208,8 @@ font-weight: 400;
     header{
         padding: 20px;
     }
-    nav, .teams-contaner,.facts-card-container,.features,.sponsors-img-container{
+    nav, .teams-contaner,.facts-card-container,.features,
+    .features-img img,.sponsors-img-container{
         flex-direction: column;
     }
     .teams-img{
